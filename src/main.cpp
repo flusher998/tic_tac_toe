@@ -189,67 +189,7 @@ int main (){
 	}catch(...){
 		std::cout<<"End of game";
 	}
-	// Главный цикл приложения: выполняется, пока открыто окно
-	/*	while (window.isOpen())
-		{
-	// Обрабатываем очередь событий в цикле
-	sf::Event event;
-	while (window.waitEvent(event))
-	{
-	sf::Image image;
-	image.loadFromFile("picture.png");
-	sf::Vector2i v(50,60);
-	sf::Vector2i v1(75,75);
-	Button button(&image,v,v1);
-	// Пользователь нажал на «крестик» и хочет закрыть окно?
-	if (event.type == sf::Event::Closed)
-	window.close(); // тогда закрываем его
-	if (event.type == sf::Event::MouseButtonPressed){
-	sf::vector2i position = sf::mouse::getposition();
-	sf::vector2i window_pos = window.getposition();
-	//	std::cout<<position.x-window_pos.x << " " << position.y-window_pos.y<<std::endl;
-	button.checkclick(sf::vector2i(position.x-window_pos.x,position.y-window_pos.y));
-	}
-	// Установка цвета фона
-	window.clear(sf::Color(68,59,49 ));
-
-
-	//DrawLine(&window,500 ,150, SuperW, 90); 
-	//	DrawLine(&window,100 ,150, 15.4, 0); 
-	sf::Text text;
-
-	// select the font
-	sf::Font font;
-	if (!font.loadFromFile("arial.ttf"))
-	{
-	// error...
-	}
-	text.setFont(font); // font is a sf::Font
-
-	// set the string to display
-	text.setString("Hello world");
-
-	DrawButton(&window,button);
-	// set the character size
-	text.setCharacterSize(74); // in pixels, not points!
-
-	// set the color
-	text.setFillColor(sf::Color::Red);
-
-	// set the text style
-	//text.setStyle(sf::Text::Bold | sf::Text::Underlined);
-	text.move(150,60);
-
-	// inside the main loop, between window.clear() and window.display()
-	window.draw(text);
-	// Отрисовка окна
-	window.display();
-	}
-
-
-	}
-
-	 */
+	
 
 
 
